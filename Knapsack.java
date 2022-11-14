@@ -32,7 +32,7 @@ class Knapsack {
             System.out.print(i + "  ");
         }
         System.out.println();
-        System.out.print("Profit & quot");
+        System.out.print("Profit");
         for (int i = 0; i < object; i++) {
             System.out.print(profit[i] + "  ");
         }
@@ -47,7 +47,7 @@ class Knapsack {
         for (int i = 0; i < object; i++) {
             System.out.print(p_w[i] + "  ");
         }
-        // code to arrange the objects in the desceding order of their profit.
+        // code to arrange the objects in the descending order of their profit.
         for (int i = 0; i < object - 1; i++) {
             for (int j = i + 1; j < object; j++) {
                 if (p_w[i] < p_w[j]) {
@@ -91,7 +91,7 @@ class Knapsack {
         int k = 0;
         double sum = 0;
         System.out.println();
-        while (m > 0) {
+        while ((m > 0) && (k < object)) {
             if (weight[k] < m) {
                 sum += 1 * profit[k];
                 m = m - weight[k];
