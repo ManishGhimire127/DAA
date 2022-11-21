@@ -39,14 +39,14 @@ class TSPExample {
         Scanner sc = new Scanner(System.in);
 
         // get total number of cities from the user
-        System.out.println("Enter total number of cities ");
+        System.out.print("Enter total number of cities ");
         cities = sc.nextInt();
 
         //get distance of cities from the user
         int distance[][] = new int[cities][cities];
         for (int i = 0; i < cities; i++) {
             for (int j = 0; j < cities; j++) {
-                System.out.println("Distance from city " + (i + 1) + "to city" + (j + 1) + ":");
+                System.out.print("Distance from city " + (i + 1) + " to city" + (j + 1) + " :");
                 distance[i][j] = sc.nextInt();
             }
         }
